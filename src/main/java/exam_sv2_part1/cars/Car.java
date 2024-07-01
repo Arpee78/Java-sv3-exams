@@ -31,7 +31,7 @@ public class Car {
     }
 
     public void decreasePrice(int percent) {
-        if (percent >= 1 && percent <= 99) {
+        if (percent > 0 && percent < 100) {
             price = price * (100 - percent) / 100;
         }
     }
